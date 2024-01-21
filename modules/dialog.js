@@ -35,6 +35,7 @@ document.addEventListener('keydown', (event) => {
     setPauseState(true)
     pauseDialog.showModal()
     back.style.background = 'rgba(0,0,0,0.7)'
+    back.style.display = 'flex'
   }
   if (event.key === CONTROLS.ESC && pauseDialog.open) {
     setPauseState(true)
@@ -46,4 +47,5 @@ document.addEventListener('keydown', (event) => {
 function closeDialog (dialog) {
   dialog.close()
   back.style.background = 'rgba(0,0,0,0)'
+  back.style.display = 'none'
 }

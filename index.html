@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luis A Sandoval @SindromeDeLuis" />
+    <meta name="description" content="Tetris demo" />
+    <title>Tetris by SindromeDeLuis</title>
+    <link rel="stylesheet" href="/styles/vendor/normalize.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="dialog__back">
+          <dialog id="newGame" open>
+            <p>New game</p>
+            <button id="start" autofocus>Start</button>
+          </dialog>
+          <dialog id="pause">
+            <p>Pause</p>
+            <button id="reset">Reset</button>
+            <button id="continue" autofocus>Continue</button>
+          </dialog>
+        </div>
+        <section class="left__panel">
+          <p>Hold</p>
+          <canvas id="prev__piece"></canvas>
+        </section>
+        <section class="center__panel">
+          <div class="board">
+            <canvas id="board"></canvas>
+          </div>
+        </section>
+        <section class="right__panel">
+          <div class="next__piece">
+            <p>Next</p>
+            <canvas id="next__piece"></canvas>
+          </div>
+          <div class="labels">
+            <p><Strong>Level: </Strong><span id="level">1</span></p>
+            <p><Strong>Lines: </Strong><span id="lines">0</span></p>
+            <p><Strong>Score: </Strong><span id="score">0.00</span></p>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="copyright">
+          <p>
+            Tetris ® & © 1985~2024 Tetris Holding. | Developed by 
+            <a
+              href="https://sindromedeluis.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Luis A Sandoval</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
